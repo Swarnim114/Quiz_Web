@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(194, 213, 240);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.game-container {
+    width: 60%;
+    max-width: 700px;
+    background: rgb(194, 213, 240);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.hud {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hud-item {
+    display: flex;
+    align-items: center;
+}
+
+.hud-prefix {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.hud-main-text {
+    font-size: 2em;
+}
+
+#progressBar {
+    width: 80px;
+    height: 20px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    border: solid 2px ;
+    border-color:  rgb(21, 163, 210);
+    margin-right: 20px;
+}
+
+#progressBarFull {
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    background-color: rgb(21, 163, 210);
+    transition: width 0.3s ease;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(194, 213, 240);
+    padding: 20px;
+}
+
+span {
+    font-size: 2.7em;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid rgb(194, 213, 240);
+    border-radius: 5px;
+    background-color: rgb(240, 248, 255);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.option:hover {
+    background-color: rgb(92, 159, 245);
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation-duration: 100ms;
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(21, 163, 210);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 5px 0 0 5px;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    margin-left: 0px; /* Adding gap between letter and choice text */
+    flex-grow: 1;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.incorrect {
+    background-color: red;
+    color: white;
+}

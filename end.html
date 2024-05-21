@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz End</title>
+    <link rel="stylesheet" href="endStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Complete!</h1>
+        <h2 id="finalScore">Your score is: 0</h2>
+        <a href="questions.html" class="btn">Play Again</a>
+        <a href="index.html" class="btn">Go Home</a>
+        
+    </div>
+    <script>
+        const finalScore = document.getElementById('finalScore');
+        const mostRecentScore = localStorage.getItem('mostRecentScore');
+
+        finalScore.innerText = `Your score is: ${mostRecentScore}`;
+    </script>
+</body>
+</html>
