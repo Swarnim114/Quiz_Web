@@ -37,7 +37,7 @@ body {
 }
 
 #progressBar {
-    width: 80px;
+    width: 150px;
     height: 20px;
     background-color: rgb(240, 240, 240);
     border-radius: 20px;
