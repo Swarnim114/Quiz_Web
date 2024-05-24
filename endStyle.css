@@ -1,12 +1,11 @@
-/* Common Styles for Consistency */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: rgb(194, 213, 240);
-    font-family: 'Courier New', Courier, monospace;
+    background-color:  rgb(219, 200, 143);
+    font-family: "Lobster two";
 }
 
 .container {
@@ -21,14 +20,15 @@ body {
 
 h1 {
     font-size: 3em;
-    color: rgb(21, 163, 210);
+    color:  rgb(219, 200, 143);
     margin-bottom: 20px;
 }
 
 h2 {
     font-size: 2em;
     color: rgb(0, 0, 0);
-    margin-bottom: 20px;
+    margin-bottom: 20px;rgb(21, 163, 210);
+    rgb(21, 163, 210);
 }
 
 .btn {
@@ -36,7 +36,7 @@ h2 {
     padding: 15px 30px;
     font-size: 1.5em;
     color: white;
-    background-color: rgb(21, 163, 210);
+    background-color:  rgb(219, 200, 143);
     text-decoration: none;
     border-radius: 15px;
     transition: background-color 0.3s ease;
@@ -44,7 +44,7 @@ h2 {
 }
 
 .btn:hover {
-    background-color: rgb(0, 122, 204);
+    background-color: rgb(0, 204, 71);
     transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     animation-duration: 100ms;
